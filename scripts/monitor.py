@@ -29,8 +29,8 @@ RIVER_HEADERS = {
     "Accept": "application/json, text/javascript, */*; q=0.01",
 }
 
-TIDECHECK_STATION_ID = "PASTE_YOUR_STATION_ID_HERE"  # see README.md
-TIDE_DANGER_LEVEL_M = 2.2  # tune this yourself
+TIDECHECK_STATION_ID = "keling-141a-mys-uhslc_rq"  # see README.md
+TIDE_DANGER_LEVEL_M = 2.0  # tune this yourself
 
 DATA_FILE = "data.json"
 STATUS_TIERS = ["normal", "alert", "warning", "danger", "unknown"]

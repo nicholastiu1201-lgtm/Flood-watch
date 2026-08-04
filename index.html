@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Klebang Besar flood watch</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+  h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+  #updated { color: #555; font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 999px; font-weight: 600; font-size: 0.85rem; }
+  .badge.normal { background: #e3f2e1; color: #1a6b2e; }
+  .badge.alert { background: #fff3cd; color: #8a6d00; }
+  .badge.warning { background: #ffe4c4; color: #a05a00; }
+  .badge.danger { background: #fde0e0; color: #b32020; }
+  .badge.unknown { background: #eee; color: #666; }
+  .cards { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+  .card { flex: 1; min-width: 200px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; }
+  .card .label { color: #666; font-size: 0.85rem; }
+  .card .value { font-size: 1.6rem; font-weight: 600; }
+  canvas { max-width: 100%; }
+</style>
+</head>
+<body>
+<h1 id="stationName">Loading station...</h1>
+<p id="updated">Loading last update time...</p>
+
+<div class="cards">
+  <div class="card">
+    <div class="label">River level</div>
+    <div class="value" id="riverValue">--</div>
+    <span class="badge unknown" id="riverBadge">unknown</span>
+  </div>
+  <div class="card">
+    <div class="label">Sea tide (next high)</div>
+    <div class="value" id="tideValue">--</div>
+  </div>
+</div>
+
+<canvas id="riverChart" height="120"></canvas>
+
+<script>
+fetch("./data.json?t=" + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById("updated").textContent = d.updated_at ? ("Last updated: " + d.updated_at) : "Waiting for first update...";
+
+    if (d.river) {
+      document.getElementById("stationName").textContent = d.river.stationName;
+      document.getElementById("riverValue").textContent = d.river.latest_wl + " m";
+      const badge = document.getElementById("riverBadge");
+      badge.textContent = d.river_status;
+      badge.className = "badge " + d.river_status;
+
+      const labels = d.river.series.map(p => p.timestamp.replace("T", " ").slice(5, 16));
+      const levels = d.river.series.map(p => p.wl);
+      const flat = v => labels.map(() => v);
+
+      new Chart(document.getElementById("riverChart"), {
+        type: "line",
+        data: {
+          labels,
+          datasets: [
+            { label: "Water level (m)", data: levels, borderColor: "#1d70b8", pointRadius: 0, tension: 0.2 },
+            { label: "Alert", data: flat(d.river.alertSetPoint), borderColor: "#f2a900", borderDash: [4, 4], pointRadius: 0 },
+            { label: "Warning", data: flat(d.river.warningSetPoint), borderColor: "#e67e00", borderDash: [4, 4], pointRadius: 0 },
+            { label: "Danger", data: flat(d.river.dangerSetPoint), borderColor: "#d4351c", borderDash: [4, 4], pointRadius: 0 },
+          ],
+        },
+        options: { scales: { x: { ticks: { maxTicksLimit: 8 } } }, plugins: { legend: { position: "bottom" } } },
+      });
+    } else {
+      document.getElementById("stationName").textContent = "Klebang Besar flood watch";
+    }
+
+    document.getElementById("tideValue").textContent = d.tide_level_m != null ? (d.tide_level_m + " m") : "not configured yet";
+  })
+  .catch(() => {
+    document.getElementById("updated").textContent = "Could not load data.json yet -- run the Action once.";
+  });
+</script>
+</body>
+</html>

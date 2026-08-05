@@ -87,7 +87,7 @@ def fetch_tide(api_key):
     r = requests.get(
         f"https://tidecheck.com/api/station/{TIDECHECK_STATION_ID}/tides",
         headers={"X-API-Key": api_key},
-        params={"days": 3, "datum": "MSL"},
+        params={"days": 3, "datum": "LAT"},
         timeout=15,
     )
     r.raise_for_status()

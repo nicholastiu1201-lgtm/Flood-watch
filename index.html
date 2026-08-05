@@ -6,8 +6,10 @@
 <title>Klebang Besar flood watch</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
+  * { box-sizing: border-box; }
   body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
   h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 0.75rem; }
   #updated { color: #555; font-size: 0.9rem; margin-bottom: 1.5rem; }
   .badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 999px; font-weight: 600; font-size: 0.85rem; }
   .badge.normal { background: #e3f2e1; color: #1a6b2e; }
@@ -15,11 +17,18 @@
   .badge.warning { background: #ffe4c4; color: #a05a00; }
   .badge.danger { background: #fde0e0; color: #b32020; }
   .badge.unknown { background: #eee; color: #666; }
-  .cards { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
-  .card { flex: 1; min-width: 200px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; }
+  .cards { display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+  .card { flex: 1; min-width: 150px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; }
   .card .label { color: #666; font-size: 0.85rem; }
-  .card .value { font-size: 1.6rem; font-weight: 600; }
-  canvas { max-width: 100%; }
+  .card .value { font-size: 1.5rem; font-weight: 600; }
+  .card .sub { color: #777; font-size: 0.8rem; margin-top: 0.15rem; }
+  .chart-box { position: relative; height: 320px; width: 100%; margin-bottom: 1.5rem; }
+  @media (max-width: 600px) {
+    body { margin: 1rem auto; }
+    .chart-box { height: 220px; }
+    .card { min-width: 130px; padding: 0.75rem; }
+    .card .value { font-size: 1.2rem; }
+  }
 </style>
 </head>
 <body>
@@ -33,14 +42,38 @@
     <span class="badge unknown" id="riverBadge">unknown</span>
   </div>
   <div class="card">
-    <div class="label">Sea tide (next high)</div>
+    <div class="label">Sea tide now</div>
     <div class="value" id="tideValue">--</div>
+  </div>
+  <div class="card">
+    <div class="label">Next high tide</div>
+    <div class="value" id="nextHighValue">--</div>
+    <div class="sub" id="nextHighTime"></div>
   </div>
 </div>
 
-<canvas id="riverChart" height="120"></canvas>
+<h2>River level trend</h2>
+<div class="chart-box"><canvas id="riverChart"></canvas></div>
+
+<h2>Sea tide trend</h2>
+<div class="chart-box"><canvas id="tideChart"></canvas></div>
 
 <script>
+const isMobile = window.innerWidth < 600;
+
+function fmtDT(iso) {
+  if (!iso) return "";
+  const [d, t] = iso.split("T");
+  const [, mo, day] = d.split("-");
+  return `${day}/${mo} ${t.slice(0, 5)}`;
+}
+
+const commonScales = {
+  x: { ticks: { maxTicksLimit: isMobile ? 4 : 8, font: { size: isMobile ? 9 : 11 } } },
+  y: { ticks: { font: { size: isMobile ? 9 : 11 } } },
+};
+const commonLegend = { position: "bottom", labels: { boxWidth: 12, font: { size: isMobile ? 10 : 12 } } };
+
 fetch("./data.json?t=" + Date.now())
   .then(r => r.json())
   .then(d => {
@@ -53,7 +86,7 @@ fetch("./data.json?t=" + Date.now())
       badge.textContent = d.river_status;
       badge.className = "badge " + d.river_status;
 
-      const labels = d.river.series.map(p => p.timestamp.replace("T", " ").slice(5, 16));
+      const labels = d.river.series.map(p => fmtDT(p.timestamp));
       const levels = d.river.series.map(p => p.wl);
       const flat = v => labels.map(() => v);
 
@@ -62,19 +95,66 @@ fetch("./data.json?t=" + Date.now())
         data: {
           labels,
           datasets: [
-            { label: "Water level (m)", data: levels, borderColor: "#1d70b8", pointRadius: 0, tension: 0.2 },
+            { label: "Water level (m)", data: levels, borderColor: "#1d70b8", borderWidth: 2, pointRadius: 0, pointHoverRadius: 5, tension: 0.2 },
             { label: "Alert", data: flat(d.river.alertSetPoint), borderColor: "#f2a900", borderDash: [4, 4], pointRadius: 0 },
             { label: "Warning", data: flat(d.river.warningSetPoint), borderColor: "#e67e00", borderDash: [4, 4], pointRadius: 0 },
             { label: "Danger", data: flat(d.river.dangerSetPoint), borderColor: "#d4351c", borderDash: [4, 4], pointRadius: 0 },
           ],
         },
-        options: { scales: { x: { ticks: { maxTicksLimit: 8 } } }, plugins: { legend: { position: "bottom" } } },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: "index", intersect: false },
+          plugins: {
+            legend: commonLegend,
+            tooltip: { callbacks: { label: c => `${c.dataset.label}: ${c.parsed.y} m` } },
+          },
+          scales: commonScales,
+        },
       });
     } else {
       document.getElementById("stationName").textContent = "Klebang Besar flood watch";
     }
 
-    document.getElementById("tideValue").textContent = d.tide_level_m != null ? (d.tide_level_m + " m") : "not configured yet";
+    if (d.tide) {
+      document.getElementById("tideValue").textContent = d.tide.current_height_m + " m";
+      document.getElementById("nextHighValue").textContent = d.tide.next_high_height_m != null ? (d.tide.next_high_height_m + " m") : "--";
+      document.getElementById("nextHighTime").textContent = fmtDT(d.tide.next_high_time);
+
+      const tLabels = d.tide.curve.map(p => fmtDT(p.time));
+      const tLevels = d.tide.curve.map(p => p.height);
+      const tRadii = d.tide.curve.map(p => p.isExtreme ? 5 : 0);
+      const tColors = d.tide.curve.map(p => p.isExtreme ? "#0b7285" : "transparent");
+
+      new Chart(document.getElementById("tideChart"), {
+        type: "line",
+        data: {
+          labels: tLabels,
+          datasets: [{
+            label: "Tide height (m, estimated)",
+            data: tLevels,
+            borderColor: "#0b7285",
+            borderWidth: 2,
+            pointRadius: tRadii,
+            pointBackgroundColor: tColors,
+            pointHoverRadius: 6,
+            tension: 0.4,
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: "index", intersect: false },
+          plugins: {
+            legend: commonLegend,
+            tooltip: { callbacks: { label: c => `Tide height: ${c.parsed.y} m` } },
+          },
+          scales: commonScales,
+        },
+      });
+    } else {
+      document.getElementById("tideValue").textContent = "not configured yet";
+    }
   })
   .catch(() => {
     document.getElementById("updated").textContent = "Could not load data.json yet -- run the Action once.";

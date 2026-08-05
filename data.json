@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T10:15:09.039630+00:00",
+  "updated_at": "2026-08-05T12:25:59.247896+00:00",
   "river": {
     "stationName": "Lencongan Sg. Malim di Klebang Besar U/S",
     "series": [
@@ -2846,13 +2846,45 @@
       {
         "timestamp": "2026-08-05T18:00:00",
         "wl": 0.74
+      },
+      {
+        "timestamp": "2026-08-05T18:15:00",
+        "wl": 0.7
+      },
+      {
+        "timestamp": "2026-08-05T18:30:00",
+        "wl": 0.66
+      },
+      {
+        "timestamp": "2026-08-05T18:45:00",
+        "wl": 0.63
+      },
+      {
+        "timestamp": "2026-08-05T19:00:00",
+        "wl": 0.58
+      },
+      {
+        "timestamp": "2026-08-05T19:15:00",
+        "wl": 0.6
+      },
+      {
+        "timestamp": "2026-08-05T19:30:00",
+        "wl": 0.6
+      },
+      {
+        "timestamp": "2026-08-05T19:45:00",
+        "wl": 0.57
+      },
+      {
+        "timestamp": "2026-08-05T20:00:00",
+        "wl": 0.56
       }
     ],
     "alertSetPoint": 1.4,
     "warningSetPoint": 1.58,
     "dangerSetPoint": 2,
-    "latest_wl": 0.74,
-    "latest_time": "2026-08-05T18:00:00"
+    "latest_wl": 0.56,
+    "latest_time": "2026-08-05T20:00:00"
   },
   "river_status": "normal",
   "tide_level_m": 0.958

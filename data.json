@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T06:04:29.578405+00:00",
+  "updated_at": "2026-08-30T12:12:53.215017+00:00",
   "river": {
     "stationName": "Lencongan Sg. Malim di Klebang Besar U/S",
     "series": [
@@ -2910,17 +2910,113 @@
       {
         "timestamp": "2026-08-30T14:00:00",
         "wl": 1.35
+      },
+      {
+        "timestamp": "2026-08-30T14:15:00",
+        "wl": 1.35
+      },
+      {
+        "timestamp": "2026-08-30T14:30:00",
+        "wl": 1.36
+      },
+      {
+        "timestamp": "2026-08-30T14:45:00",
+        "wl": 1.36
+      },
+      {
+        "timestamp": "2026-08-30T15:00:00",
+        "wl": 1.37
+      },
+      {
+        "timestamp": "2026-08-30T15:15:00",
+        "wl": 1.39
+      },
+      {
+        "timestamp": "2026-08-30T15:30:00",
+        "wl": 1.43
+      },
+      {
+        "timestamp": "2026-08-30T15:45:00",
+        "wl": 1.45
+      },
+      {
+        "timestamp": "2026-08-30T16:00:00",
+        "wl": 1.45
+      },
+      {
+        "timestamp": "2026-08-30T16:15:00",
+        "wl": 1.42
+      },
+      {
+        "timestamp": "2026-08-30T16:30:00",
+        "wl": 1.42
+      },
+      {
+        "timestamp": "2026-08-30T16:45:00",
+        "wl": 1.4
+      },
+      {
+        "timestamp": "2026-08-30T17:00:00",
+        "wl": 1.38
+      },
+      {
+        "timestamp": "2026-08-30T17:15:00",
+        "wl": 1.4
+      },
+      {
+        "timestamp": "2026-08-30T17:30:00",
+        "wl": 1.39
+      },
+      {
+        "timestamp": "2026-08-30T17:45:00",
+        "wl": 1.42
+      },
+      {
+        "timestamp": "2026-08-30T18:00:00",
+        "wl": 1.41
+      },
+      {
+        "timestamp": "2026-08-30T18:15:00",
+        "wl": 1.42
+      },
+      {
+        "timestamp": "2026-08-30T18:30:00",
+        "wl": 1.39
+      },
+      {
+        "timestamp": "2026-08-30T18:45:00",
+        "wl": 1.42
+      },
+      {
+        "timestamp": "2026-08-30T19:00:00",
+        "wl": 1.42
+      },
+      {
+        "timestamp": "2026-08-30T19:15:00",
+        "wl": 1.43
+      },
+      {
+        "timestamp": "2026-08-30T19:30:00",
+        "wl": 1.41
+      },
+      {
+        "timestamp": "2026-08-30T19:45:00",
+        "wl": 1.42
+      },
+      {
+        "timestamp": "2026-08-30T20:00:00",
+        "wl": 1.42
       }
     ],
     "alertSetPoint": 1.4,
     "warningSetPoint": 1.58,
     "dangerSetPoint": 2,
-    "latest_wl": 1.35,
-    "latest_time": "2026-08-30T14:00:00"
+    "latest_wl": 1.42,
+    "latest_time": "2026-08-30T20:00:00"
   },
-  "river_status": "normal",
+  "river_status": "alert",
   "tide": {
-    "current_height_m": 0.5,
+    "current_height_m": 1.89,
     "next_high_height_m": 2.078,
     "next_high_time": "2026-08-30T21:23:06",
     "extremes": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T18:51:47.134723+00:00",
+  "updated_at": "2026-09-03T21:29:58.582801+00:00",
   "river": {
     "stationName": "Lencongan Sg. Malim di Klebang Besar U/S",
     "series": [
@@ -2718,17 +2718,65 @@
       {
         "timestamp": "2026-09-04T02:00:00",
         "wl": 1.42
+      },
+      {
+        "timestamp": "2026-09-04T02:15:00",
+        "wl": 1.38
+      },
+      {
+        "timestamp": "2026-09-04T02:30:00",
+        "wl": 1.37
+      },
+      {
+        "timestamp": "2026-09-04T02:45:00",
+        "wl": 1.33
+      },
+      {
+        "timestamp": "2026-09-04T03:00:00",
+        "wl": 1.29
+      },
+      {
+        "timestamp": "2026-09-04T03:15:00",
+        "wl": 1.25
+      },
+      {
+        "timestamp": "2026-09-04T03:30:00",
+        "wl": 1.21
+      },
+      {
+        "timestamp": "2026-09-04T03:45:00",
+        "wl": 1.18
+      },
+      {
+        "timestamp": "2026-09-04T04:00:00",
+        "wl": 1.15
+      },
+      {
+        "timestamp": "2026-09-04T04:15:00",
+        "wl": 1.12
+      },
+      {
+        "timestamp": "2026-09-04T04:30:00",
+        "wl": 1.09
+      },
+      {
+        "timestamp": "2026-09-04T04:45:00",
+        "wl": 1.06
+      },
+      {
+        "timestamp": "2026-09-04T05:00:00",
+        "wl": 1.06
       }
     ],
     "alertSetPoint": 1.4,
     "warningSetPoint": 1.58,
     "dangerSetPoint": 2,
-    "latest_wl": 1.42,
-    "latest_time": "2026-09-04T02:00:00"
+    "latest_wl": 1.06,
+    "latest_time": "2026-09-04T05:00:00"
   },
-  "river_status": "alert",
+  "river_status": "normal",
   "tide": {
-    "current_height_m": 0.93,
+    "current_height_m": 0.4,
     "next_high_height_m": 1.964,
     "next_high_time": "2026-09-04T12:23:07",
     "extremes": [

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T11:42:22.381754+00:00",
+  "updated_at": "2026-09-03T15:10:20.866647+00:00",
   "river": {
     "stationName": "Lencongan Sg. Malim di Klebang Besar U/S",
     "series": [
@@ -2990,17 +2990,81 @@
       {
         "timestamp": "2026-09-03T19:00:00",
         "wl": 1.87
+      },
+      {
+        "timestamp": "2026-09-03T19:15:00",
+        "wl": 1.87
+      },
+      {
+        "timestamp": "2026-09-03T19:30:00",
+        "wl": 1.87
+      },
+      {
+        "timestamp": "2026-09-03T19:45:00",
+        "wl": 1.86
+      },
+      {
+        "timestamp": "2026-09-03T20:00:00",
+        "wl": 1.86
+      },
+      {
+        "timestamp": "2026-09-03T20:15:00",
+        "wl": 1.87
+      },
+      {
+        "timestamp": "2026-09-03T20:30:00",
+        "wl": 1.86
+      },
+      {
+        "timestamp": "2026-09-03T20:45:00",
+        "wl": 1.87
+      },
+      {
+        "timestamp": "2026-09-03T21:00:00",
+        "wl": 1.87
+      },
+      {
+        "timestamp": "2026-09-03T21:15:00",
+        "wl": 1.87
+      },
+      {
+        "timestamp": "2026-09-03T21:30:00",
+        "wl": 1.87
+      },
+      {
+        "timestamp": "2026-09-03T21:45:00",
+        "wl": 1.88
+      },
+      {
+        "timestamp": "2026-09-03T22:00:00",
+        "wl": 1.88
+      },
+      {
+        "timestamp": "2026-09-03T22:15:00",
+        "wl": 1.89
+      },
+      {
+        "timestamp": "2026-09-03T22:30:00",
+        "wl": 1.89
+      },
+      {
+        "timestamp": "2026-09-03T22:45:00",
+        "wl": 1.89
+      },
+      {
+        "timestamp": "2026-09-03T23:00:00",
+        "wl": 1.88
       }
     ],
     "alertSetPoint": 1.4,
     "warningSetPoint": 1.58,
     "dangerSetPoint": 2,
-    "latest_wl": 1.87,
-    "latest_time": "2026-09-03T19:00:00"
+    "latest_wl": 1.88,
+    "latest_time": "2026-09-03T23:00:00"
   },
   "river_status": "warning",
   "tide": {
-    "current_height_m": 0.94,
+    "current_height_m": 1.66,
     "next_high_height_m": 1.662,
     "next_high_time": "2026-09-03T23:24:28",
     "extremes": [

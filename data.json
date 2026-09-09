@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T11:49:49.441896+00:00",
+  "updated_at": "2026-09-09T15:32:07.697773+00:00",
   "river": {
     "stationName": "Lencongan Sg. Malim di Klebang Besar U/S",
     "series": [
@@ -2994,17 +2994,81 @@
       {
         "timestamp": "2026-09-09T19:00:00",
         "wl": 1.24
+      },
+      {
+        "timestamp": "2026-09-09T19:15:00",
+        "wl": 1.62
+      },
+      {
+        "timestamp": "2026-09-09T19:30:00",
+        "wl": 1.61
+      },
+      {
+        "timestamp": "2026-09-09T19:45:00",
+        "wl": 1.19
+      },
+      {
+        "timestamp": "2026-09-09T20:00:00",
+        "wl": 1.19
+      },
+      {
+        "timestamp": "2026-09-09T20:15:00",
+        "wl": 1.19
+      },
+      {
+        "timestamp": "2026-09-09T20:30:00",
+        "wl": 1.65
+      },
+      {
+        "timestamp": "2026-09-09T20:45:00",
+        "wl": 1.63
+      },
+      {
+        "timestamp": "2026-09-09T21:00:00",
+        "wl": 1.65
+      },
+      {
+        "timestamp": "2026-09-09T21:15:00",
+        "wl": 1.66
+      },
+      {
+        "timestamp": "2026-09-09T21:30:00",
+        "wl": 1.64
+      },
+      {
+        "timestamp": "2026-09-09T21:45:00",
+        "wl": 1.63
+      },
+      {
+        "timestamp": "2026-09-09T22:00:00",
+        "wl": 1.66
+      },
+      {
+        "timestamp": "2026-09-09T22:15:00",
+        "wl": 1.62
+      },
+      {
+        "timestamp": "2026-09-09T22:30:00",
+        "wl": 1.67
+      },
+      {
+        "timestamp": "2026-09-09T22:45:00",
+        "wl": 1.62
+      },
+      {
+        "timestamp": "2026-09-09T23:00:00",
+        "wl": 1.5
       }
     ],
     "alertSetPoint": 1.4,
     "warningSetPoint": 1.58,
     "dangerSetPoint": 2,
-    "latest_wl": 1.24,
-    "latest_time": "2026-09-09T19:00:00"
+    "latest_wl": 1.5,
+    "latest_time": "2026-09-09T23:00:00"
   },
-  "river_status": "normal",
+  "river_status": "alert",
   "tide": {
-    "current_height_m": 2.14,
+    "current_height_m": 1.08,
     "next_high_height_m": 2.05,
     "next_high_time": "2026-09-10T07:11:47",
     "extremes": [
@@ -4027,5 +4091,5 @@
       }
     ]
   },
-  "tide_alerted_next_high_time": null
+  "tide_alerted_next_high_time": "2026-09-10T07:11:47"
 }

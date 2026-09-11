@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T06:37:13.644474+00:00",
+  "updated_at": "2026-09-11T11:47:44.397983+00:00",
   "river": {
     "stationName": "Lencongan Sg. Malim di Klebang Besar U/S",
     "series": [
@@ -2910,17 +2910,97 @@
       {
         "timestamp": "2026-09-11T14:00:00",
         "wl": 1.62
+      },
+      {
+        "timestamp": "2026-09-11T14:15:00",
+        "wl": 1.49
+      },
+      {
+        "timestamp": "2026-09-11T14:30:00",
+        "wl": 1.53
+      },
+      {
+        "timestamp": "2026-09-11T14:45:00",
+        "wl": 1.65
+      },
+      {
+        "timestamp": "2026-09-11T15:00:00",
+        "wl": 1.71
+      },
+      {
+        "timestamp": "2026-09-11T15:15:00",
+        "wl": 1.6
+      },
+      {
+        "timestamp": "2026-09-11T15:30:00",
+        "wl": 1.5
+      },
+      {
+        "timestamp": "2026-09-11T15:45:00",
+        "wl": 1.75
+      },
+      {
+        "timestamp": "2026-09-11T16:00:00",
+        "wl": 1.75
+      },
+      {
+        "timestamp": "2026-09-11T16:15:00",
+        "wl": 1.75
+      },
+      {
+        "timestamp": "2026-09-11T16:30:00",
+        "wl": 1.74
+      },
+      {
+        "timestamp": "2026-09-11T16:45:00",
+        "wl": 1.75
+      },
+      {
+        "timestamp": "2026-09-11T17:00:00",
+        "wl": 1.68
+      },
+      {
+        "timestamp": "2026-09-11T17:15:00",
+        "wl": 1.75
+      },
+      {
+        "timestamp": "2026-09-11T17:30:00",
+        "wl": 1.77
+      },
+      {
+        "timestamp": "2026-09-11T17:45:00",
+        "wl": 1.77
+      },
+      {
+        "timestamp": "2026-09-11T18:00:00",
+        "wl": 1.77
+      },
+      {
+        "timestamp": "2026-09-11T18:15:00",
+        "wl": 1.77
+      },
+      {
+        "timestamp": "2026-09-11T18:30:00",
+        "wl": 1.77
+      },
+      {
+        "timestamp": "2026-09-11T18:45:00",
+        "wl": 1.77
+      },
+      {
+        "timestamp": "2026-09-11T19:00:00",
+        "wl": 1.77
       }
     ],
     "alertSetPoint": 1.4,
     "warningSetPoint": 1.58,
     "dangerSetPoint": 2,
-    "latest_wl": 1.62,
-    "latest_time": "2026-09-11T14:00:00"
+    "latest_wl": 1.77,
+    "latest_time": "2026-09-11T19:00:00"
   },
   "river_status": "warning",
   "tide": {
-    "current_height_m": 0.08,
+    "current_height_m": 2.1,
     "next_high_height_m": 2.165,
     "next_high_time": "2026-09-11T20:28:12",
     "extremes": [
@@ -3933,5 +4013,5 @@
       }
     ]
   },
-  "tide_alerted_next_high_time": "2026-09-11T20:28:12"
+  "tide_alerted_next_high_time": null
 }

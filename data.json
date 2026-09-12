@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T23:31:15.709742+00:00",
+  "updated_at": "2026-09-12T01:32:17.227482+00:00",
   "river": {
     "stationName": "Lencongan Sg. Malim di Klebang Besar U/S",
     "series": [
@@ -2802,40 +2802,52 @@
       {
         "timestamp": "2026-09-12T07:00:00",
         "wl": 1.27
+      },
+      {
+        "timestamp": "2026-09-12T07:15:00",
+        "wl": 1.36
+      },
+      {
+        "timestamp": "2026-09-12T07:30:00",
+        "wl": 1.14
+      },
+      {
+        "timestamp": "2026-09-12T07:45:00",
+        "wl": 1.08
+      },
+      {
+        "timestamp": "2026-09-12T08:00:00",
+        "wl": 1.13
+      },
+      {
+        "timestamp": "2026-09-12T08:15:00",
+        "wl": 1.14
+      },
+      {
+        "timestamp": "2026-09-12T08:30:00",
+        "wl": 1.15
+      },
+      {
+        "timestamp": "2026-09-12T08:45:00",
+        "wl": 1.23
+      },
+      {
+        "timestamp": "2026-09-12T09:00:00",
+        "wl": 1.26
       }
     ],
     "alertSetPoint": 1.4,
     "warningSetPoint": 1.58,
     "dangerSetPoint": 2,
-    "latest_wl": 1.27,
-    "latest_time": "2026-09-12T07:00:00"
+    "latest_wl": 1.26,
+    "latest_time": "2026-09-12T09:00:00"
   },
   "river_status": "normal",
   "tide": {
-    "current_height_m": 2.24,
-    "next_high_height_m": 2.351,
-    "next_high_time": "2026-09-12T08:23:55",
+    "current_height_m": 2.2,
+    "next_high_height_m": 2.096,
+    "next_high_time": "2026-09-12T20:56:34",
     "extremes": [
-      {
-        "type": "low",
-        "time": "2026-09-10T13:58:55",
-        "height": 0.117
-      },
-      {
-        "type": "high",
-        "time": "2026-09-10T19:57:39",
-        "height": 2.19
-      },
-      {
-        "type": "low",
-        "time": "2026-09-11T02:23:38",
-        "height": 0.556
-      },
-      {
-        "type": "high",
-        "time": "2026-09-11T07:49:02",
-        "height": 2.231
-      },
       {
         "type": "low",
         "time": "2026-09-11T14:40:18",
@@ -2843,12 +2855,12 @@
       },
       {
         "type": "high",
-        "time": "2026-09-11T20:28:12",
+        "time": "2026-09-11T20:28:13",
         "height": 2.165
       },
       {
         "type": "low",
-        "time": "2026-09-12T02:52:00",
+        "time": "2026-09-12T02:52:01",
         "height": 0.497
       },
       {
@@ -2868,17 +2880,17 @@
       },
       {
         "type": "low",
-        "time": "2026-09-13T03:15:46",
+        "time": "2026-09-13T03:15:45",
         "height": 0.458
       },
       {
         "type": "high",
-        "time": "2026-09-13T08:57:05",
+        "time": "2026-09-13T08:57:06",
         "height": 2.407
       },
       {
         "type": "low",
-        "time": "2026-09-13T15:51:17",
+        "time": "2026-09-13T15:51:18",
         "height": 0.171
       },
       {
@@ -2890,462 +2902,217 @@
         "type": "low",
         "time": "2026-09-14T03:34:38",
         "height": 0.431
+      },
+      {
+        "type": "high",
+        "time": "2026-09-14T09:28:54",
+        "height": 2.399
+      },
+      {
+        "type": "low",
+        "time": "2026-09-14T16:19:42",
+        "height": 0.287
+      },
+      {
+        "type": "high",
+        "time": "2026-09-14T21:46:55",
+        "height": 1.905
+      },
+      {
+        "type": "low",
+        "time": "2026-09-15T03:52:11",
+        "height": 0.411
       }
     ],
     "curve": [
-      {
-        "time": "2026-09-10T13:58:55",
-        "height": 0.12,
-        "isExtreme": true
-      },
-      {
-        "time": "2026-09-10T14:28:55",
-        "height": 0.15,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T14:58:55",
-        "height": 0.26,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T15:28:55",
-        "height": 0.42,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T15:58:55",
-        "height": 0.64,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T16:28:55",
-        "height": 0.89,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T16:58:55",
-        "height": 1.16,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T17:28:55",
-        "height": 1.43,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T17:58:55",
-        "height": 1.68,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T18:28:55",
-        "height": 1.89,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T18:58:55",
-        "height": 2.06,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T19:28:55",
-        "height": 2.16,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T19:57:39",
-        "height": 2.19,
-        "isExtreme": true
-      },
-      {
-        "time": "2026-09-10T19:58:55",
-        "height": 2.19,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T20:28:55",
-        "height": 2.16,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T20:58:55",
-        "height": 2.09,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T21:28:55",
-        "height": 1.97,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T21:58:55",
-        "height": 1.82,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T22:28:55",
-        "height": 1.65,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T22:58:55",
-        "height": 1.45,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T23:28:55",
-        "height": 1.25,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-10T23:58:55",
-        "height": 1.06,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T00:28:55",
-        "height": 0.89,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T00:58:55",
-        "height": 0.74,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T01:28:55",
-        "height": 0.64,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T01:58:55",
-        "height": 0.57,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T02:23:38",
-        "height": 0.56,
-        "isExtreme": true
-      },
-      {
-        "time": "2026-09-11T02:28:55",
-        "height": 0.56,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T02:58:55",
-        "height": 0.6,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T03:28:55",
-        "height": 0.72,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T03:58:55",
-        "height": 0.89,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T04:28:55",
-        "height": 1.1,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T04:58:55",
-        "height": 1.33,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T05:28:55",
-        "height": 1.57,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T05:58:55",
-        "height": 1.8,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T06:28:55",
-        "height": 1.99,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T06:58:55",
-        "height": 2.13,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T07:28:55",
-        "height": 2.22,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T07:49:02",
-        "height": 2.23,
-        "isExtreme": true
-      },
-      {
-        "time": "2026-09-11T07:58:55",
-        "height": 2.23,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T08:28:55",
-        "height": 2.18,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T08:58:55",
-        "height": 2.08,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T09:28:55",
-        "height": 1.93,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T09:58:55",
-        "height": 1.74,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T10:28:55",
-        "height": 1.52,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T10:58:55",
-        "height": 1.28,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T11:28:55",
-        "height": 1.04,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T11:58:55",
-        "height": 0.8,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T12:28:55",
-        "height": 0.57,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T12:58:55",
-        "height": 0.38,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T13:28:55",
-        "height": 0.23,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T13:58:55",
-        "height": 0.13,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T14:28:55",
-        "height": 0.08,
-        "isExtreme": false
-      },
       {
         "time": "2026-09-11T14:40:18",
         "height": 0.08,
         "isExtreme": true
       },
       {
-        "time": "2026-09-11T14:58:55",
-        "height": 0.09,
+        "time": "2026-09-11T15:10:18",
+        "height": 0.11,
         "isExtreme": false
       },
       {
-        "time": "2026-09-11T15:28:55",
-        "height": 0.18,
+        "time": "2026-09-11T15:40:18",
+        "height": 0.23,
         "isExtreme": false
       },
       {
-        "time": "2026-09-11T15:58:55",
-        "height": 0.33,
+        "time": "2026-09-11T16:10:18",
+        "height": 0.4,
         "isExtreme": false
       },
       {
-        "time": "2026-09-11T16:28:55",
-        "height": 0.54,
+        "time": "2026-09-11T16:40:18",
+        "height": 0.63,
         "isExtreme": false
       },
       {
-        "time": "2026-09-11T16:58:55",
-        "height": 0.79,
+        "time": "2026-09-11T17:10:18",
+        "height": 0.9,
         "isExtreme": false
       },
       {
-        "time": "2026-09-11T17:28:55",
-        "height": 1.07,
+        "time": "2026-09-11T17:40:18",
+        "height": 1.18,
         "isExtreme": false
       },
       {
-        "time": "2026-09-11T17:58:55",
-        "height": 1.35,
+        "time": "2026-09-11T18:10:18",
+        "height": 1.45,
         "isExtreme": false
       },
       {
-        "time": "2026-09-11T18:28:55",
-        "height": 1.62,
+        "time": "2026-09-11T18:40:18",
+        "height": 1.71,
         "isExtreme": false
       },
       {
-        "time": "2026-09-11T18:58:55",
-        "height": 1.84,
+        "time": "2026-09-11T19:10:18",
+        "height": 1.92,
         "isExtreme": false
       },
       {
-        "time": "2026-09-11T19:28:55",
-        "height": 2.02,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T19:58:55",
-        "height": 2.13,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T20:28:12",
-        "height": 2.17,
-        "isExtreme": true
-      },
-      {
-        "time": "2026-09-11T20:28:55",
-        "height": 2.16,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T20:58:55",
-        "height": 2.14,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T21:28:55",
-        "height": 2.06,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T21:58:55",
-        "height": 1.95,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T22:28:55",
-        "height": 1.79,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T22:58:55",
-        "height": 1.61,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T23:28:55",
-        "height": 1.41,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-11T23:58:55",
-        "height": 1.2,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T00:28:55",
-        "height": 1.01,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T00:58:55",
-        "height": 0.83,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T01:28:55",
-        "height": 0.68,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T01:58:55",
-        "height": 0.57,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T02:28:55",
-        "height": 0.51,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T02:52:00",
-        "height": 0.5,
-        "isExtreme": true
-      },
-      {
-        "time": "2026-09-12T02:58:55",
-        "height": 0.5,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T03:28:55",
-        "height": 0.55,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T03:58:55",
-        "height": 0.68,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T04:28:55",
-        "height": 0.86,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T04:58:55",
-        "height": 1.09,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T05:28:55",
-        "height": 1.34,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T05:58:55",
-        "height": 1.61,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T06:28:55",
-        "height": 1.85,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-12T06:58:55",
+        "time": "2026-09-11T19:40:18",
         "height": 2.07,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T07:28:55",
-        "height": 2.23,
+        "time": "2026-09-11T20:10:18",
+        "height": 2.15,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T07:58:55",
-        "height": 2.33,
+        "time": "2026-09-11T20:28:13",
+        "height": 2.17,
+        "isExtreme": true
+      },
+      {
+        "time": "2026-09-11T20:40:18",
+        "height": 2.16,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-11T21:10:18",
+        "height": 2.12,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-11T21:40:18",
+        "height": 2.02,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-11T22:10:18",
+        "height": 1.89,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-11T22:40:18",
+        "height": 1.72,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-11T23:10:18",
+        "height": 1.53,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-11T23:40:18",
+        "height": 1.33,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T00:10:18",
+        "height": 1.13,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T00:40:18",
+        "height": 0.94,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T01:10:18",
+        "height": 0.77,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T01:40:18",
+        "height": 0.64,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T02:10:18",
+        "height": 0.55,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T02:40:18",
+        "height": 0.5,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T02:52:01",
+        "height": 0.5,
+        "isExtreme": true
+      },
+      {
+        "time": "2026-09-12T03:10:18",
+        "height": 0.51,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T03:40:18",
+        "height": 0.59,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T04:10:18",
+        "height": 0.74,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T04:40:18",
+        "height": 0.94,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T05:10:18",
+        "height": 1.18,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T05:40:18",
+        "height": 1.44,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T06:10:18",
+        "height": 1.7,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T06:40:18",
+        "height": 1.94,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T07:10:18",
+        "height": 2.13,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T07:40:18",
+        "height": 2.27,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-12T08:10:18",
+        "height": 2.34,
         "isExtreme": false
       },
       {
@@ -3354,73 +3121,73 @@
         "isExtreme": true
       },
       {
-        "time": "2026-09-12T08:28:55",
-        "height": 2.35,
+        "time": "2026-09-12T08:40:18",
+        "height": 2.34,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T08:58:55",
-        "height": 2.31,
+        "time": "2026-09-12T09:10:18",
+        "height": 2.28,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T09:28:55",
-        "height": 2.22,
+        "time": "2026-09-12T09:40:18",
+        "height": 2.17,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T09:58:55",
-        "height": 2.07,
+        "time": "2026-09-12T10:10:18",
+        "height": 2.0,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T10:28:55",
-        "height": 1.88,
+        "time": "2026-09-12T10:40:18",
+        "height": 1.8,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T10:58:55",
-        "height": 1.66,
+        "time": "2026-09-12T11:10:18",
+        "height": 1.57,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T11:28:55",
-        "height": 1.41,
+        "time": "2026-09-12T11:40:18",
+        "height": 1.31,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T11:58:55",
-        "height": 1.16,
+        "time": "2026-09-12T12:10:18",
+        "height": 1.06,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T12:28:55",
-        "height": 0.9,
+        "time": "2026-09-12T12:40:18",
+        "height": 0.81,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T12:58:55",
-        "height": 0.67,
+        "time": "2026-09-12T13:10:18",
+        "height": 0.59,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T13:28:55",
-        "height": 0.46,
+        "time": "2026-09-12T13:40:18",
+        "height": 0.39,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T13:58:55",
-        "height": 0.29,
+        "time": "2026-09-12T14:10:18",
+        "height": 0.24,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T14:28:55",
-        "height": 0.17,
+        "time": "2026-09-12T14:40:18",
+        "height": 0.14,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T14:58:55",
-        "height": 0.11,
+        "time": "2026-09-12T15:10:18",
+        "height": 0.1,
         "isExtreme": false
       },
       {
@@ -3429,58 +3196,58 @@
         "isExtreme": true
       },
       {
-        "time": "2026-09-12T15:28:55",
-        "height": 0.1,
+        "time": "2026-09-12T15:40:18",
+        "height": 0.12,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T15:58:55",
-        "height": 0.17,
+        "time": "2026-09-12T16:10:18",
+        "height": 0.21,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T16:28:55",
-        "height": 0.31,
+        "time": "2026-09-12T16:40:18",
+        "height": 0.38,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T16:58:55",
-        "height": 0.5,
+        "time": "2026-09-12T17:10:18",
+        "height": 0.59,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T17:28:55",
-        "height": 0.75,
+        "time": "2026-09-12T17:40:18",
+        "height": 0.85,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T17:58:55",
-        "height": 1.02,
+        "time": "2026-09-12T18:10:18",
+        "height": 1.13,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T18:28:55",
-        "height": 1.3,
+        "time": "2026-09-12T18:40:18",
+        "height": 1.4,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T18:58:55",
-        "height": 1.56,
+        "time": "2026-09-12T19:10:18",
+        "height": 1.65,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T19:28:55",
-        "height": 1.78,
+        "time": "2026-09-12T19:40:18",
+        "height": 1.86,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T19:58:55",
-        "height": 1.96,
+        "time": "2026-09-12T20:10:18",
+        "height": 2.01,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T20:28:55",
-        "height": 2.06,
+        "time": "2026-09-12T20:40:18",
+        "height": 2.08,
         "isExtreme": false
       },
       {
@@ -3489,263 +3256,263 @@
         "isExtreme": true
       },
       {
-        "time": "2026-09-12T20:58:55",
-        "height": 2.1,
+        "time": "2026-09-12T21:10:18",
+        "height": 2.09,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T21:28:55",
-        "height": 2.07,
+        "time": "2026-09-12T21:40:18",
+        "height": 2.04,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T21:58:55",
-        "height": 1.99,
+        "time": "2026-09-12T22:10:18",
+        "height": 1.95,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T22:28:55",
-        "height": 1.87,
+        "time": "2026-09-12T22:40:18",
+        "height": 1.81,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T22:58:55",
-        "height": 1.71,
+        "time": "2026-09-12T23:10:18",
+        "height": 1.64,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T23:28:55",
-        "height": 1.53,
+        "time": "2026-09-12T23:40:18",
+        "height": 1.45,
         "isExtreme": false
       },
       {
-        "time": "2026-09-12T23:58:55",
-        "height": 1.33,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T00:28:55",
-        "height": 1.12,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T00:58:55",
-        "height": 0.93,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T01:28:55",
-        "height": 0.76,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T01:58:55",
-        "height": 0.62,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T02:28:55",
-        "height": 0.52,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T02:58:55",
-        "height": 0.47,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T03:15:46",
-        "height": 0.46,
-        "isExtreme": true
-      },
-      {
-        "time": "2026-09-13T03:28:55",
-        "height": 0.47,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T03:58:55",
-        "height": 0.53,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T04:28:55",
-        "height": 0.67,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T04:58:55",
-        "height": 0.87,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T05:28:55",
-        "height": 1.1,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T05:58:55",
-        "height": 1.37,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T06:28:55",
-        "height": 1.63,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T06:58:55",
-        "height": 1.89,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T07:28:55",
-        "height": 2.1,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T07:58:55",
-        "height": 2.27,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T08:28:55",
-        "height": 2.37,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T08:57:05",
-        "height": 2.41,
-        "isExtreme": true
-      },
-      {
-        "time": "2026-09-13T08:58:55",
-        "height": 2.41,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T09:28:55",
-        "height": 2.37,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T09:58:55",
-        "height": 2.29,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T10:28:55",
-        "height": 2.15,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T10:58:55",
-        "height": 1.96,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T11:28:55",
-        "height": 1.74,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T11:58:55",
-        "height": 1.5,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T12:28:55",
+        "time": "2026-09-13T00:10:18",
         "height": 1.25,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T12:58:55",
-        "height": 1.0,
+        "time": "2026-09-13T00:40:18",
+        "height": 1.05,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T13:28:55",
-        "height": 0.76,
+        "time": "2026-09-13T01:10:18",
+        "height": 0.86,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T13:58:55",
-        "height": 0.55,
+        "time": "2026-09-13T01:40:18",
+        "height": 0.7,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T14:28:55",
-        "height": 0.38,
+        "time": "2026-09-13T02:10:18",
+        "height": 0.58,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T14:58:55",
-        "height": 0.26,
+        "time": "2026-09-13T02:40:18",
+        "height": 0.49,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T15:28:55",
-        "height": 0.19,
+        "time": "2026-09-13T03:10:18",
+        "height": 0.46,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T15:51:17",
-        "height": 0.17,
+        "time": "2026-09-13T03:15:45",
+        "height": 0.46,
         "isExtreme": true
       },
       {
-        "time": "2026-09-13T15:58:55",
-        "height": 0.17,
+        "time": "2026-09-13T03:40:18",
+        "height": 0.48,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T16:28:55",
-        "height": 0.23,
+        "time": "2026-09-13T04:10:18",
+        "height": 0.58,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T16:58:55",
-        "height": 0.35,
+        "time": "2026-09-13T04:40:18",
+        "height": 0.74,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T17:28:55",
-        "height": 0.54,
+        "time": "2026-09-13T05:10:18",
+        "height": 0.95,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T17:58:55",
-        "height": 0.76,
+        "time": "2026-09-13T05:40:18",
+        "height": 1.2,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T18:28:55",
-        "height": 1.02,
+        "time": "2026-09-13T06:10:18",
+        "height": 1.47,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T18:58:55",
-        "height": 1.28,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T19:28:55",
-        "height": 1.52,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-13T19:58:55",
+        "time": "2026-09-13T06:40:18",
         "height": 1.73,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T20:28:55",
-        "height": 1.89,
+        "time": "2026-09-13T07:10:18",
+        "height": 1.97,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T20:58:55",
-        "height": 1.98,
+        "time": "2026-09-13T07:40:18",
+        "height": 2.17,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T08:10:18",
+        "height": 2.32,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T08:40:18",
+        "height": 2.4,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T08:57:06",
+        "height": 2.41,
+        "isExtreme": true
+      },
+      {
+        "time": "2026-09-13T09:10:18",
+        "height": 2.4,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T09:40:18",
+        "height": 2.35,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T10:10:18",
+        "height": 2.24,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T10:40:18",
+        "height": 2.08,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T11:10:18",
+        "height": 1.88,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T11:40:18",
+        "height": 1.65,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T12:10:18",
+        "height": 1.41,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T12:40:18",
+        "height": 1.15,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T13:10:18",
+        "height": 0.91,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T13:40:18",
+        "height": 0.68,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T14:10:18",
+        "height": 0.48,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T14:40:18",
+        "height": 0.33,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T15:10:18",
+        "height": 0.22,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T15:40:18",
+        "height": 0.17,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T15:51:18",
+        "height": 0.17,
+        "isExtreme": true
+      },
+      {
+        "time": "2026-09-13T16:10:18",
+        "height": 0.19,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T16:40:18",
+        "height": 0.27,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T17:10:18",
+        "height": 0.42,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T17:40:18",
+        "height": 0.62,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T18:10:18",
+        "height": 0.86,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T18:40:18",
+        "height": 1.12,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T19:10:18",
+        "height": 1.37,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T19:40:18",
+        "height": 1.6,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T20:10:18",
+        "height": 1.8,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T20:40:18",
+        "height": 1.93,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-13T21:10:18",
+        "height": 2.0,
         "isExtreme": false
       },
       {
@@ -3754,73 +3521,333 @@
         "isExtreme": true
       },
       {
-        "time": "2026-09-13T21:28:55",
+        "time": "2026-09-13T21:40:18",
         "height": 2.0,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T21:58:55",
-        "height": 1.97,
+        "time": "2026-09-13T22:10:18",
+        "height": 1.94,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T22:28:55",
-        "height": 1.88,
+        "time": "2026-09-13T22:40:18",
+        "height": 1.84,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T22:58:55",
-        "height": 1.76,
+        "time": "2026-09-13T23:10:18",
+        "height": 1.7,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T23:28:55",
-        "height": 1.6,
+        "time": "2026-09-13T23:40:18",
+        "height": 1.53,
         "isExtreme": false
       },
       {
-        "time": "2026-09-13T23:58:55",
-        "height": 1.41,
+        "time": "2026-09-14T00:10:18",
+        "height": 1.34,
         "isExtreme": false
       },
       {
-        "time": "2026-09-14T00:28:55",
-        "height": 1.22,
+        "time": "2026-09-14T00:40:18",
+        "height": 1.14,
         "isExtreme": false
       },
       {
-        "time": "2026-09-14T00:58:55",
-        "height": 1.02,
+        "time": "2026-09-14T01:10:18",
+        "height": 0.95,
         "isExtreme": false
       },
       {
-        "time": "2026-09-14T01:28:55",
-        "height": 0.83,
+        "time": "2026-09-14T01:40:18",
+        "height": 0.77,
         "isExtreme": false
       },
       {
-        "time": "2026-09-14T01:58:55",
-        "height": 0.67,
+        "time": "2026-09-14T02:10:18",
+        "height": 0.62,
         "isExtreme": false
       },
       {
-        "time": "2026-09-14T02:28:55",
-        "height": 0.55,
+        "time": "2026-09-14T02:40:18",
+        "height": 0.51,
         "isExtreme": false
       },
       {
-        "time": "2026-09-14T02:58:55",
-        "height": 0.47,
-        "isExtreme": false
-      },
-      {
-        "time": "2026-09-14T03:28:55",
-        "height": 0.43,
+        "time": "2026-09-14T03:10:18",
+        "height": 0.45,
         "isExtreme": false
       },
       {
         "time": "2026-09-14T03:34:38",
         "height": 0.43,
+        "isExtreme": true
+      },
+      {
+        "time": "2026-09-14T03:40:18",
+        "height": 0.43,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T04:10:18",
+        "height": 0.48,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T04:40:18",
+        "height": 0.59,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T05:10:18",
+        "height": 0.76,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T05:40:18",
+        "height": 0.98,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T06:10:18",
+        "height": 1.23,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T06:40:18",
+        "height": 1.49,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T07:10:18",
+        "height": 1.74,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T07:40:18",
+        "height": 1.98,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T08:10:18",
+        "height": 2.17,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T08:40:18",
+        "height": 2.31,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T09:10:18",
+        "height": 2.39,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T09:28:54",
+        "height": 2.4,
+        "isExtreme": true
+      },
+      {
+        "time": "2026-09-14T09:40:18",
+        "height": 2.39,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T10:10:18",
+        "height": 2.35,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T10:40:18",
+        "height": 2.25,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T11:10:18",
+        "height": 2.1,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T11:40:18",
+        "height": 1.91,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T12:10:18",
+        "height": 1.69,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T12:40:18",
+        "height": 1.46,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T13:10:18",
+        "height": 1.21,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T13:40:18",
+        "height": 0.98,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T14:10:18",
+        "height": 0.76,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T14:40:18",
+        "height": 0.58,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T15:10:18",
+        "height": 0.43,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T15:40:18",
+        "height": 0.33,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T16:10:18",
+        "height": 0.29,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T16:19:42",
+        "height": 0.29,
+        "isExtreme": true
+      },
+      {
+        "time": "2026-09-14T16:40:18",
+        "height": 0.3,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T17:10:18",
+        "height": 0.38,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T17:40:18",
+        "height": 0.52,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T18:10:18",
+        "height": 0.7,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T18:40:18",
+        "height": 0.92,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T19:10:18",
+        "height": 1.15,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T19:40:18",
+        "height": 1.38,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T20:10:18",
+        "height": 1.58,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T20:40:18",
+        "height": 1.75,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T21:10:18",
+        "height": 1.86,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T21:40:18",
+        "height": 1.9,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T21:46:55",
+        "height": 1.91,
+        "isExtreme": true
+      },
+      {
+        "time": "2026-09-14T22:10:18",
+        "height": 1.89,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T22:40:18",
+        "height": 1.83,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T23:10:18",
+        "height": 1.72,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-14T23:40:18",
+        "height": 1.58,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-15T00:10:18",
+        "height": 1.41,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-15T00:40:18",
+        "height": 1.22,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-15T01:10:18",
+        "height": 1.03,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-15T01:40:18",
+        "height": 0.84,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-15T02:10:18",
+        "height": 0.68,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-15T02:40:18",
+        "height": 0.55,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-15T03:10:18",
+        "height": 0.46,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-15T03:40:18",
+        "height": 0.41,
+        "isExtreme": false
+      },
+      {
+        "time": "2026-09-15T03:52:11",
+        "height": 0.41,
         "isExtreme": true
       }
     ]
